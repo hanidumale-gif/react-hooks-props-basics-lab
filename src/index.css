@@ -1,67 +1,72 @@
+/* Reset default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 1em;
-}
-
+/* Navigation Bar */
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: #222;
+  padding: 15px;
+  text-align: center;
 }
 
 nav a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: 0 1rem;
+  color: white;
   text-decoration: none;
-  font-size: 1.2em;
-  color: firebrick;
-  border-bottom: 2px solid firebrick;
-  transition: 0.1s;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-nav a:hover,
-nav a:active {
-  color: tomato;
-  border-bottom: 2px solid tomato;
+nav a:hover {
+  color: #00bcd4;
 }
 
-#home,
-#about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+/* Main Sections */
+div {
+  padding: 30px;
   text-align: center;
-  height: 100vh;
-  padding: 1rem;
 }
 
-#home {
-  background-color: cornsilk;
+/* Headings */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-#about img {
-  max-height: 50%;
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-#about a {
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Links section */
+a {
   display: block;
+  margin: 5px 0;
+  color: #0077b6;
+}
+
+a:hover {
+  text-decoration: underline;
 }
